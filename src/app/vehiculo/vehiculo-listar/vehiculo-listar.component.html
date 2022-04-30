@@ -1,0 +1,20 @@
+
+<div class="card-body">
+  <h5 class="card-title">TuSegundazo.com</h5>
+</div>
+<div class="container-fluid" style="padding-right:40%;">
+  <div class="row" style="margin: 1%;">
+    <div class="col-3" style="background-color: rgb(8, 22, 36); color: aliceblue; border: 1ch;">#</div>
+    <div class="col-3" style="background-color: rgb(8, 22, 36); color: aliceblue; border: 1ch">Marca</div>
+    <div class="col-3" style="background-color: rgb(8, 22, 36); color: aliceblue; border: 1ch">linea</div>
+    <div class="col-3" style="background-color: rgb(8, 22, 36); color: aliceblue; border: 1ch">Modelo</div>
+  </div>
+
+  <div *ngFor="let vehiculo of vehiculos">
+  <div class="row" style="margin: 1%;">
+      <div class="col-3">{{ vehiculo.id }}</div>
+      <div class="col-3"> {{ vehiculo.marca }}</div>
+      <div class="col-3">{{ vehiculo.linea }}</div>
+      <div class="col-3">{{ vehiculo.modelo }}</div>
+  </div>
+</div>
